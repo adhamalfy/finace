@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* varible */
+:root{
+    --light: #fff;
+--main-color: #e6eefe;
+--border-radius:13px;
+    
+}  
+/* end varible */
+body{
+    background-color: black;
+    background-attachment: fixed;
+    font-family: 'Cairo', sans-serif;
+   font-family: 'Merriweather', serif;
+   font-size: 0.8rem;
+}
+.main {
+    width: 100%;
+   
+    display: flex;
+    justify-content: center;
+}
+ .main .conatiner{
+    display: flex;
+    margin: 3rem;
+    background-color: #282828;
+    flex-wrap: wrap;
+    justify-content: center;
+
+ }
+ .main .conatiner .first{
+    background-color: black;
+     margin: 3rem;
+    padding: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: space-between;
+    gap: 1.5rem;
+    color: var(--light);
+}
+
+
+ 
+ .main .conatiner .first .search{
+    display: flex;
+    align-items: center;
+    width: 16vw;
+   
+} 
+.main .conatiner .first .search input{
+       height: 46px;
+       padding-left: 2rem;
+       border:  solid transparent;
+       border-radius: var(--border-radius);
+       background-color: whitesmoke;
+       transition: 1s ;
+     
+} 
+.main .conatiner .first .search svg{
+    position: absolute;
+    left: 174px;
+} 
+.main .conatiner .first .search input:hover{
+    border-color: rgb(222 118 159 /50%);
+    background-color: var(--light);
+    box-shadow: 0 0 0 5px rgb(211 130 149 /15%);
+} 
+.main .conatiner .first .row1{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+} 
+
+
+.main .conatiner .second{
+    background-color: black;
+    margin: 4rem;
+    padding: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: space-between;
+    gap: 2.5rem;
+    color: var(--light);
+}
+.main .conatiner .second .row1{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+} 
+.main .conatiner .second .part1 .paragraph{
+   padding: 2rem;
+   background-color: white;
+   color: black;
+} 
+.main .conatiner .second .row2{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    justify-content: flex-end;
+} 
+.main .conatiner .second .part2 .paragraph2{
+   padding: 2rem;
+   background-color: white;
+   color: black;
+} 
+
+/* response */
+@media screen and (max-width: 480px) {
+    .main {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+        
+      }
+      .main .conatiner .first .row1{
+        display: flex;
+      flex-direction: column;
+    
+     }
+     .main .conatiner .first .search svg {
+        position: absolute;
+        left: 101px;
+    }
+        
+      }
+/* end response */

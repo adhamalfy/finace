@@ -1,0 +1,464 @@
+   *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    /*  varible */
+    :root{
+        --light: #fff;
+    --main-color: #e6eefe;
+    --border-radius:13px;
+        
+    }  /* end varible */
+    body{
+        background-color: var(--main-color);
+        background-attachment: fixed;
+        font-family: 'Cairo', sans-serif;
+       font-family: 'Merriweather', serif;
+       font-size: 0.8rem;
+    }
+    .main{
+        display: flex;
+        width: 100%;
+        height: 100vh;
+    }
+  
+    /* aside */
+    aside{
+        margin: 2rem;
+    }
+   aside img {
+    background-color: var(--light);
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    -webkit-border-radius: var(--border-radius);
+    -moz-border-radius: var(--border-radius);
+    -ms-border-radius: var(--border-radius);
+    -o-border-radius: var(--border-radius);
+}
+aside nav {
+    background-color: var(--light);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 52px;
+    margin-top: 1rem;
+}
+
+aside nav .a1,
+aside nav .a2,
+aside nav .a3,
+aside nav .a4,
+aside nav .a5
+ {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    text-decoration: none;
+    color: #737070;
+}
+aside nav  p::after,
+aside nav  p::after,
+aside nav  p::after,
+aside nav  p::after,
+aside nav  p::after
+ {
+    content:'';
+  
+    
+}
+aside nav .a1::before,
+aside nav .a2::before,
+aside nav .a3::before,
+aside nav .a4::before,
+aside nav .a5::before 
+ {
+    content: '';
+    position: absolute;
+    margin-top: 2rem;
+    width: 9%;
+    height: 1px;
+    background-color: black;
+    transform-origin: left;
+    transform: scaleX(0);
+    transition:1s;
+   
+}
+  
+aside nav .a1:hover::before,
+aside nav .a2:hover::before,
+aside nav .a3:hover::before,
+aside nav .a4:hover::before,
+aside nav .a5:hover::before 
+ { 
+    transform: scalex(1) ;
+    transform-origin: left;
+    height: 1px;
+}
+  
+ 
+
+
+/* end aside */
+  /* ceneter page  */
+  .ceneter {
+    width: 100%;
+} 
+  .ceneter header{
+    background-color: var(--light);
+    margin: 2rem;
+    padding: 3.5rem;
+    border-radius: var(--border-radius);
+    -webkit-border-radius: var(--border-radius);
+    -moz-border-radius: var(--border-radius);
+    -ms-border-radius: var(--border-radius);
+    -o-border-radius: var(--border-radius);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} 
+  .ceneter header .search{
+    display: flex;
+    align-items: center;
+    width: 16vw;
+   
+} 
+  .ceneter header .search input{
+       height: 46px;
+       padding-left: 2rem;
+       border:  solid transparent;
+       border-radius: var(--border-radius);
+       background-color: whitesmoke;
+       transition: 1s ;
+     
+} 
+.ceneter header .search svg{
+    position: absolute;
+    left: 412px;
+} 
+  .ceneter header .search input:hover{
+    border-color: rgb(222 118 159 /50%);
+    background-color: var(--light);
+    box-shadow: 0 0 0 5px rgb(211 130 149 /15%);
+} 
+  .ceneter header .rightbar{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+} 
+  .ceneter header .rightbar span {
+    animation: rotate 1s infinite alternate;
+    } 
+    @keyframes rotate {
+        from{
+            rotate: 40deg;
+            
+        }
+        to {
+              rotate: -40deg;
+        }
+        
+    }
+  .ceneter header .rightbar img{
+   border-radius: 50%;
+  border: 2px solid black;
+} 
+.ceneter .data{
+    background-color: var(--light);
+    margin: 2rem;
+    padding: 1rem;
+
+}
+.ceneter .data .boxes{
+    display: flex;
+    justify-content: center;
+ align-items: center;
+ flex-wrap: wrap;
+ flex-direction: row;
+user-select: none;
+
+}
+.ceneter .data .boxes .box1{
+    padding: 2rem;
+    margin: 1rem;
+    border-top: 6px solid #2196f3;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    transition: 1s;
+   
+}
+.ceneter .data .boxes .box1:hover{
+
+  background-color:#2196f3 ;
+}
+
+.ceneter .data .boxes .box2{
+    padding: 2rem;
+    margin: 1rem;
+    border-top: 6px solid skyblue;
+    border-radius: 6px;
+    -webkit-border-radius: 6px; transition: 1s;
+}
+.ceneter .data .boxes .box2:hover{
+
+    background-color:skyblue ;
+  }
+.ceneter .data .boxes .box3{
+    padding: 2rem;
+    margin: 1rem;
+    border-top: 6px solid blueviolet;
+    border-radius: 6px;
+    -webkit-border-radius: 6px; transition: 1s;
+}
+.ceneter .data .boxes .box3:hover{
+
+    background-color:blueviolet ;
+  }
+.ceneter .data .boxes .box4{
+    padding: 2rem;
+    margin: 1rem;
+    border-top: 6px solid #8ccb8f;
+    border-radius: 6px;
+    -webkit-border-radius: 6px; transition: 1s;
+}
+.ceneter .data .boxes .box4:hover{
+
+    background-color:#8ccb8f ;
+  }
+.ceneter .data .boxes .box1 h2 ,
+.ceneter .data .boxes .box2 h2 ,
+.ceneter .data .boxes .box3 h2 ,
+.ceneter .data .boxes .box4 h2 
+{
+    font-size: 2.5rem;
+    margin: 1rem 0;
+}
+.ceneter .data .underpart{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.ceneter .data .analysis .shap2{
+    background-color: var(--main-color);
+    display: flex;
+    width: 300px;
+    height: 220px;
+    gap: 17px;
+    transform: skew(357deg, 18deg);
+margin-top: 3rem;
+}
+.ceneter .data .analysis .shap2 .line1{
+    background-color: #f44336;
+    margin-top: 11rem;
+    margin-left: 1rem;
+}
+.ceneter .data .analysis .shap2 .line2{
+    background-color: #ff9800;
+    margin-top: 9rem;
+    margin-left: 1rem;;
+
+}
+.ceneter .data .analysis .shap2 .line3{
+    background-color: #ffc10778;
+    margin-top: 7rem;
+    margin-left: 1rem;
+
+}
+.ceneter .data .analysis .shap2 .line4{
+    background-color: #4caf50;
+    margin-top: 5rem;
+    margin-left: 1rem;
+
+}
+.ceneter .data .analysis .shap2 .line5{
+    background-color: #2196f3;
+    margin-top: 3rem;
+    margin-left: 1rem
+}
+.ceneter .data .analysis .shap2 .line1,
+.ceneter .data .analysis .shap2 .line2,
+.ceneter .data .analysis .shap2 .line3,
+.ceneter .data .analysis .shap2 .line4,
+.ceneter .data .analysis .shap2 .line5
+{
+    box-shadow: 4px -3px 0px 4px #b8b6b6;
+
+}
+.ceneter .data .shape3 {
+    background-color: var(--main-color);
+    height: 242px;
+}
+.ceneter .data .shape3 table{
+    display: flex;
+    
+    padding: 0.66rem;
+    height: 185px;
+    width: 285px;
+    background-color: var(--main-color);
+}
+
+
+.ceneter .data .shape3 table tbody{
+    display: flex;
+    gap: 1.8rem;
+    border-bottom: 1px solid;
+}
+.ceneter .data .shape3 table tbody .tr1{
+    background-color: #f44336;
+ 
+    width: 30px;
+    height: 34px;
+ 
+    margin-top: 8.1rem;
+}
+.ceneter .data .shape3 table tbody .tr2{
+    background-color: #ffc107;
+    width: 30px;
+    height: 60px;
+    margin-top: 6.41rem;
+}
+.ceneter .data .shape3 table tbody .tr3{
+    background-color: #ffeb3b61;
+    width: 30px;
+    height: 86px;
+    margin-top: 4.8rem;
+}
+.ceneter .data .shape3 table tbody .tr4{
+    background-color: #4caf50;
+    width: 30px;
+    height: 123px;
+    margin-top: 2.5rem;
+}
+.ceneter .data .shape3 table tbody .tr5{
+    background-color: #00bcd4;
+    width: 30px;
+    height: 150px;
+    margin-top: 0.8rem;
+}
+.ceneter .data .shape3 table tbody .tr1,
+.ceneter .data .shape3 table tbody .tr2,
+.ceneter .data .shape3 table tbody .tr3,
+.ceneter .data .shape3 table tbody .tr4,
+.ceneter .data .shape3 table tbody .tr5
+{
+ transform-origin:bottom ;
+ animation: scaley 4s linear infinite;
+ -webkit-animation: scaley 5s linear infinite;
+}
+@keyframes scaley {
+    from{
+        transform:scaleY(0) ;
+       
+    }
+    20%{
+        transform:scaleY(1) ;
+        
+       
+}
+    
+}
+.ceneter .data .shape3  p{
+      /* margin-top: 18rem; */
+      position: relative;
+      top: 197px;
+      /* display: flex; */
+      left: 8px;
+  }
+ .no{
+    display: flex;
+    /* align-content: space-between; */
+    gap: 1.66rem;
+}
+.upperpart2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  
+    margin-top: 4rem;
+    
+}
+#line-example-15 {
+    height: 200px;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: var(--main-color);
+  }
+  #stock-chart-example-2 {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: 50px 1fr 50px;
+    grid-template-rows: 200px 50px 50px;
+    grid-template-areas: 
+      "data-1-axis  stocks       data-2-axis"
+      "data-1-axis  volume       data-2-axis"
+      "primary-axis primary-axis primary-axis";
+    background-color:var(--main-color);
+    width: 600px;
+  }
+  #stock-chart-example-2 > table.area,
+  #stock-chart-example-2 > table.line {
+    grid-area: stocks;
+  }
+  #stock-chart-example-2 > table.column {
+    grid-area: volume;
+  }
+  #stock-chart-example-2 > .primary-axis {
+    grid-area: primary-axis;
+  }
+  #stock-chart-example-2 > .data-1-axis {
+    grid-area: data-1-axis;
+    writing-mode: tb-rl;
+    transform: rotateZ(180deg);
+  }
+  #stock-chart-example-2 > .data-2-axis {
+    grid-area: data-2-axis;
+    writing-mode: tb-rl;
+  }
+  /* Colors */
+  #stock-chart-example-2 > table.area {
+    --color: linear-gradient(#666, rgba(255, 255, 255, 0));
+  }
+  #stock-chart-example-2 > table.line {
+    --color: white;
+  }
+  #stock-chart-example-2 > table.column tr:nth-child(even) {
+    --color: blueviolet;
+  }
+  #stock-chart-example-2 > table.column tr:nth-child(odd) {
+    --color: blueviolet;
+  }
+
+/* end center page */
+/* response */
+@media screen and (max-width: 480px) {
+    .main {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+        
+      }
+
+    .ceneter header {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 2rem;
+          
+        }
+        .ceneter header .search svg {
+            position: absolute;
+            left: 98px;
+        }
+        .ceneter .data .shape3 {
+          margin-top: 4rem;
+        }
+        .upperpart2 {
+          
+            gap: 1rem;
+        }
+        
+      }
+/* end responce */

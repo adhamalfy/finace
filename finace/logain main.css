@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* varible */
+:root{
+    --light: #fff;
+--main-color: #e6eefe;
+--border-radius:13px;
+    
+}  
+/* end varible */
+
+body{
+    background-color: var(--main-color);
+    background-attachment: fixed;
+    font-family: 'Cairo', sans-serif;
+   font-family: 'Merriweather', serif;
+   font-size: 0.8rem;
+}
+/* form */
+ .main .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+ .main .container .child {
+    background-color: var(--light);
+    padding: 6rem;
+    border-radius: var(--border-radius);
+   
+}
+ .main .container .child h1 {
+    letter-spacing: 1rem;
+    font-size: 3rem;
+    padding: 2rem;
+   
+}
+
+ .main .container .child form .form  {
+    margin: 0 0 40px;
+    position: relative;
+}
+ .main .container .child form .form input {
+    border: 0;
+    border-bottom: 3px solid black;
+    display: block;
+    width: 100%;
+    padding: 1rem;
+   color: black;
+   outline: none;
+}
+ .main .container .child form .form  label  {
+    position: absolute;
+    top: 20px;
+    font-size: 1.5rem;
+    pointer-events: none;
+   
+}
+
+.main .container .child form .form label span {
+    display: inline-block;
+    font-size: 18px;
+    min-width: 5px;
+    color: black;
+    transition:0.2s ;
+    ;
+}
+.main .container .child form .form input:focus+label span{
+    transform: translateY(-40px);
+    border: 0;
+    -webkit-transform: translateY(-40px);
+    -moz-transform: translateY(-40px);
+    -ms-transform: translateY(-40px);
+    -o-transform: translateY(-40px);
+}
+
+
+ .main .container .child form .buttons {
+    display: flex;
+    gap: 2rem;
+}
+ .main .container .child form .buttons input {
+    background-color: black;
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    letter-spacing: 4px;
+    cursor: pointer;
+}
+
+/* end form */
+/* response */
+@media screen and (max-width: 480px) {
+    .main .container .child {
+       
+        padding: 2rem;
+      
+    }
+    
+        
+      }
+/* end response */
